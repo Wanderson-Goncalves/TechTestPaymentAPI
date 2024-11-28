@@ -29,5 +29,7 @@ namespace TechTestPaymentAPI.src.Entities
         [EnumDataType(typeof(Status))]
         public Status Status {get; set;} = Status.AwaitingPayment;
 
+        
+
     }
 }
