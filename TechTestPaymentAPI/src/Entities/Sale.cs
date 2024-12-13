@@ -12,22 +12,30 @@ namespace TechTestPaymentAPI.src.Entities
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Column("idSale")]
         public int idSale {get; set;}
 
         [Required]
-
+        [Column("idSeller")]
         [ForeignKey("Seller")]
         public int idSeller {get; set;}
 
         [Required]
+        [Column("Seller")]
+        [StringLength(50)]
         public Seller? Seller {get; set;}
 
         [Required]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
+        [Column("SaleDate")]
         public DateTime SaleDate {get; set;}
 
         [EnumDataType(typeof(Status))]
+        [Column("Status")]
         public Status Status {get; set;} = Status.AwaitingPayment;
+
+        public virtual ICollection<Product>? Products {get; set;}
+        public virtual ICollection<SellerSale> SellerSales {get; set;}
 
         
 

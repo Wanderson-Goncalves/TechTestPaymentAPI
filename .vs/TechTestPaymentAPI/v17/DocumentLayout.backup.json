@@ -1,12 +1,54 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\Wanderon\\Projetos de Estudo\\TechTestPaymentAPI\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6F17C612-1294-447D-86EC-D14887EE199A}|TechTestPaymentAPI\\TechTestPaymentAPI.csproj|e:\\wanderon\\projetos de estudo\\techtestpaymentapi\\techtestpaymentapi\\src\\entities\\seller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F17C612-1294-447D-86EC-D14887EE199A}|TechTestPaymentAPI\\TechTestPaymentAPI.csproj|solutionrelative:techtestpaymentapi\\src\\entities\\seller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F17C612-1294-447D-86EC-D14887EE199A}|TechTestPaymentAPI\\TechTestPaymentAPI.csproj|e:\\wanderon\\projetos de estudo\\techtestpaymentapi\\techtestpaymentapi\\src\\entities\\sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F17C612-1294-447D-86EC-D14887EE199A}|TechTestPaymentAPI\\TechTestPaymentAPI.csproj|solutionrelative:techtestpaymentapi\\src\\entities\\sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Seller.cs",
+              "DocumentMoniker": "E:\\Wanderon\\Projetos de Estudo\\TechTestPaymentAPI\\TechTestPaymentAPI\\src\\Entities\\Seller.cs",
+              "RelativeDocumentMoniker": "TechTestPaymentAPI\\src\\Entities\\Seller.cs",
+              "ToolTip": "E:\\Wanderon\\Projetos de Estudo\\TechTestPaymentAPI\\TechTestPaymentAPI\\src\\Entities\\Seller.cs",
+              "RelativeToolTip": "TechTestPaymentAPI\\src\\Entities\\Seller.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T14:40:41.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Sale.cs",
+              "DocumentMoniker": "E:\\Wanderon\\Projetos de Estudo\\TechTestPaymentAPI\\TechTestPaymentAPI\\src\\Entities\\Sale.cs",
+              "RelativeDocumentMoniker": "TechTestPaymentAPI\\src\\Entities\\Sale.cs",
+              "ToolTip": "E:\\Wanderon\\Projetos de Estudo\\TechTestPaymentAPI\\TechTestPaymentAPI\\src\\Entities\\Sale.cs",
+              "RelativeToolTip": "TechTestPaymentAPI\\src\\Entities\\Sale.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwCQAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T14:21:30.082Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

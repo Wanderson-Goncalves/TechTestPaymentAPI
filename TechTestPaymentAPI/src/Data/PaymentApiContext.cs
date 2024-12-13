@@ -14,6 +14,22 @@ namespace TechTestPaymentAPI.src.Data
         public DbSet<Sale> Sale { get; set; }
         public DbSet<Seller> Seller { get; set; }
         public DbSet<Product> Product { get; set; }
+        public DbSet<SellerSale> SellerSale { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            // Configurar a tabela de junção 
+            modelBuilder.Entity<SellerSale>()
+                .HasOne(ss => ss.Seller)
+                .WithMany(s => s.SellerSales)
+                .HasForeignKey(ss => ss.idSeller);
+
+            modelBuilder.Entity<SellerSale>()
+                .HasOne(ss => ss.Sale)
+                .WithMany(s => s.SellerSales)
+                .HasForeignKey(ss => ss.idSale);
+        }
 
     }
 }
