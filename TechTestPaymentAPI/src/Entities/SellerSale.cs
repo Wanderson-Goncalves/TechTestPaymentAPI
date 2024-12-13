@@ -14,18 +14,17 @@ namespace TechTestPaymentAPI.src.Entities
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Column("idSellerSale")]
         public int idSellerSale { get; set; }
+
         [Required]
         [Column("idSeller")]
-        public int idSeller { get; set; }
         [ForeignKey("idSeller")]
-        public Seller Seller { get; set; }
+        public int idSeller { get; set; }
+
+
         [Required]
         [Column("idSale")]
-        public int idSale { get; set; }
-
         [ForeignKey("idSale")]
-        public Sale Sale { get; set;}
-
-
+        public int idSale { get; set; }
+        public object Seller { get; internal set; }
     }
 }

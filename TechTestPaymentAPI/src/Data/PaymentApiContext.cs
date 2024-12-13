@@ -16,6 +16,19 @@ namespace TechTestPaymentAPI.src.Data
         public DbSet<Product> Product { get; set; }
         public DbSet<SellerSale> SellerSale { get; set; }
 
+
+        /**
+        *? configuring the inMemory database
+        */
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseInMemoryDatabase("PaymentApiContext");
+            base.OnConfiguring(optionsBuilder);
+        }
+
+        /**
+       *? configuring relationships
+       */
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -23,12 +36,15 @@ namespace TechTestPaymentAPI.src.Data
             modelBuilder.Entity<SellerSale>()
                 .HasOne(ss => ss.Seller)
                 .WithMany(s => s.SellerSales)
-                .HasForeignKey(ss => ss.idSeller);
+                .HasForeignKey(ss => ss.idSeller)
+                .OnDelete(DeleteBehavior.Cascade);
+
 
             modelBuilder.Entity<SellerSale>()
                 .HasOne(ss => ss.Sale)
                 .WithMany(s => s.SellerSales)
-                .HasForeignKey(ss => ss.idSale);
+                .HasForeignKey(ss => ss.idSale)
+                .OnDelete(DeleteBehavior.Cascade);
         }
 
     }
