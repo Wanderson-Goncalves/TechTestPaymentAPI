@@ -17,14 +17,16 @@ namespace TechTestPaymentAPI.src.Entities
 
         [Required]
         [Column("idSeller")]
-        [ForeignKey("idSeller")]
         public int idSeller { get; set; }
 
-
+        [ForeignKey("idSeller")]
+        public Seller Seller { get; set; }
+       
         [Required]
         [Column("idSale")]
-        [ForeignKey("idSale")]
         public int idSale { get; set; }
-        public object Seller { get; internal set; }
+        
+        [ForeignKey("idSale")]
+        public Sale Sale { get; set; }
     }
 }
