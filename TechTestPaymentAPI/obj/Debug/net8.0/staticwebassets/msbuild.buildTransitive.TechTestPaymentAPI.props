@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\TechTestPaymentAPI.props" />
+</Project>

@@ -13,7 +13,7 @@ namespace TechTestPaymentAPI.src.Data
         { }
         public DbSet<Sale> Sale { get; set; }
         public DbSet<Seller> Seller { get; set; }
-        public DbSet<Product> Product { get; set; }
+        public DbSet<Product> Products { get; set; }
         public DbSet<SellerSale> SellerSale { get; set; }
 
 

@@ -27,7 +27,7 @@ namespace TechTestPaymentAPI.src.Entities
         public decimal Value { get; set; }
 
         [Required]
-        public virtual List<Product> Product { get; set; } = new List<Product>();/*new List<Product>(): Inicializa a lista para evitar NullReferenceException.*/
+        public virtual List<Product> Products { get; set; } = new List<Product>();/*new List<Product>(): Inicializa a lista para evitar NullReferenceException.*/
 
     }
 }
