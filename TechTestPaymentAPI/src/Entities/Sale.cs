@@ -35,7 +35,7 @@ namespace TechTestPaymentAPI.src.Entities
         public Status Status {get; set;} = Status.AwaitingPayment;
 
         public virtual ICollection<Product>? Products {get; set;}
-        public virtual ICollection<SellerSale> SellerSales {get; set;}
+        
 
         
 

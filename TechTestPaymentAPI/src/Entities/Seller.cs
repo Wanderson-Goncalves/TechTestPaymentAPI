@@ -38,6 +38,6 @@ namespace TechTestPaymentAPI.src.Entities
         [Column("Phone")]
         public string? Telephone { get; set; }
 
-        public virtual ICollection<SellerSale> SellerSales {get; set;}
+        public virtual ICollection<Sale> Sales {get; set;}
     }
 }

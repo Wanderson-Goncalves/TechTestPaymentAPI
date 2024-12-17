@@ -14,7 +14,7 @@ namespace TechTestPaymentAPI.src.Data
         public DbSet<Sale> Sale { get; set; }
         public DbSet<Seller> Seller { get; set; }
         public DbSet<Product> Products { get; set; }
-        public DbSet<SellerSale> SellerSale { get; set; }
+
 
 
         /**
@@ -33,18 +33,14 @@ namespace TechTestPaymentAPI.src.Data
         {
             base.OnModelCreating(modelBuilder);
             // Configurar a tabela de junção 
-            modelBuilder.Entity<SellerSale>()
-                .HasOne(ss => ss.Seller)
-                .WithMany(s => s.SellerSales)
+            modelBuilder.Entity<Seller>()
+                .HasOne(ss => ss.Seles)
+                .WithMany(s => s.Seller)
                 .HasForeignKey(ss => ss.idSeller)
                 .OnDelete(DeleteBehavior.Cascade);
 
 
-            modelBuilder.Entity<SellerSale>()
-                .HasOne(ss => ss.Sale)
-                .WithMany(s => s.SellerSales)
-                .HasForeignKey(ss => ss.idSale)
-                .OnDelete(DeleteBehavior.Cascade);
+           
         }
 
     }
